@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card read more</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>Card 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem veritatis esse pariatur corrupti quod provident, eligendi culpa fugiat recusandae voluptatum commodi animi! Ipsum commodi amet cupiditate doloribus magni nemo corrupti, architecto sed in? Tempora, eos voluptas! Est fuga dignissimos quam veniam dolores repellat accusantium, unde culpa eveniet reiciendis recusandae, corrupti excepturi hic praesentium ipsam debitis quod repellendus rerum harum! Consequatur non odit rem maiores iste, nobis laudantium quidem officia placeat nisi, corporis nesciunt, accusamus corrupti accusantium quis animi modi!</p>
+            </div>
+            <a class="btn" href="#">Read more 
+                <div class="cirle"><i class="fa-solid fa-arrow-down"></i></div>
+            </a>
+        </div>
+        
+
+    </div>
+
+
+    <script>
+        let card = document.querySelector('.card')
+        let btn = document.querySelector('.btn')
+        document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', function() {
+        card.classList.toggle('active');
+        btn.classList.toggle('active_btn');
+    });
+});
+
+    </script>
+</body>
+</html>
